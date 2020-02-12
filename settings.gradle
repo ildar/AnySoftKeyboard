@@ -3,6 +3,8 @@ rootProject.name = 'AnySoftKeyboard'
 include ':api'
 
 include ':addons:base'
+
+//this pack is used in the main keyboard app
 include ':addons:languages'
 include ':addons:languages:english', ':addons:languages:english:pack'
 
@@ -47,16 +49,17 @@ include ':addons:languages:polish:pack', ':addons:languages:polish:apk'
 include ':addons:languages:rusyn:pack', ':addons:languages:rusyn:apk'
 
 //list of themes should be alphabetized-ordered
-include ':themes'
+include ':addons:themes'
 include ':addons:themes:classic_pc:pack', ':addons:themes:classic_pc:apk'
 include ':addons:themes:ics:pack', ':addons:themes:ics:apk'
 include ':addons:themes:israel64:pack', ':addons:themes:israel64:apk'
 include ':addons:themes:three_d:pack', ':addons:themes:three_d:apk'
 
 //list of quick-text should be alphabetized-ordered
-include ':quicktexts'
+include ':addons:quicktexts'
 include ':addons:quicktexts:bbcodes:pack', ':addons:quicktexts:bbcodes:apk'
 
+//keyboard app
 include ':ime'
 include ':ime:base', ':ime:base-rx', ':ime:base-test', ':ime:prefs'
 include ':ime:remote', ':ime:fileprovider'
