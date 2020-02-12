@@ -81,7 +81,7 @@ public class GestureTypingDetectorTest {
                         }),
                 Collections.singletonList(new int[] {134, 126, 108, 120, 149, 129, 121, 170}));
 
-        Assert.assertEquals(SharkGestureTypingDetector.LoadingState.LOADED, mCurrentState.get());
+        Assert.assertEquals(SharkGestureTypingDetector.LoadingState.LOADING, mCurrentState.get());
     }
 
     @After
